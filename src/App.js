@@ -1,16 +1,19 @@
-import React, { Component } from 'react';
-import { hot } from 'react-hot-loader';
-import HelloWorld from './components/hello-world';
+import React from 'react';
+import { Switch, BrowserRouter as Router, Route } from 'react-router-dom';
+import { Home, About, NoMatch } from './screen';
+import { Menu } from './component';
 
-class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
+const AppRouter = () => (
+  <Router>
+    <div>
+      <Menu />
+      <Switch>
+        <Route path="/" exact component={Home} />
+        <Route path="/about" component={About} />
+        <Route component={NoMatch} />
+      </Switch>
+    </div>
+  </Router>
+);
 
-  render() {
-    return <HelloWorld title="Hello from React webpacks" />;
-  }
-}
-
-export default hot(module)(App);
+export default AppRouter;

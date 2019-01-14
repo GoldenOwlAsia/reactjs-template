@@ -1,0 +1,11 @@
+.home-container {
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-title {
+  color: green;
+  font-size: 40px;
+}

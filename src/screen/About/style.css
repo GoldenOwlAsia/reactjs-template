@@ -1,0 +1,11 @@
+.about-container {
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-title {
+  color: red;
+  font-size: 40px;
+}

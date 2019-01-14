@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "reactjs-template",
   "scripts": {
-    "start": "cross-env NODE_ENV=development webpack-dev-server --open",
+    "start": "cross-env NODE_ENV=development webpack-dev-server",
     "build": "cross-env NODE_ENV=production webpack"
   },
   "dependencies": {
@@ -15,7 +15,9 @@
     "prop-types": "15.6.2",
     "react": "16.7.0",
     "react-dom": "16.7.0",
-    "react-hot-loader": "4.6.3"
+    "react-hot-loader": "4.6.3",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1"
   },
   "resolutions": {
     "babel-core": "7.0.0-bridge.0"

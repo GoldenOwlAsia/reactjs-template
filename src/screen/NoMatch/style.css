@@ -1,0 +1,11 @@
+.nomatch-container {
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nomatch-title {
+  color: crimson;
+  font-size: 20px;
+}

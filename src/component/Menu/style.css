@@ -1,0 +1,6 @@
+.menu-contaner {
+  display: flex;
+  background-color: cyan;
+  padding: 10px;
+  justify-content: space-around;
+}
