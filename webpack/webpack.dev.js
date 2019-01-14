@@ -1,5 +1,5 @@
 const webpack = require('webpack');
-
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const commonPaths = require('./paths');
 
 module.exports = {
@@ -27,5 +27,8 @@ module.exports = {
     historyApiFallback: true,
     hot: true,
   },
-  plugins: [new webpack.HotModuleReplacementPlugin()],
+  plugins: [
+    new webpack.HotModuleReplacementPlugin(),
+    new BundleAnalyzerPlugin(),
+  ],
 };

@@ -10,6 +10,7 @@ coverage
 
 # Logs
 *.log
+stats.json
 
 # npm & yarn
 node_modules/
